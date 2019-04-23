@@ -52,7 +52,7 @@
   "Mu視覺感測器.PORT.I2C|block": "I2C",
   "Mu視覺感測器.PORT.Serial|block": "Serial",
   "Mu視覺感測器.Params.HEIGHT|block": "高度",
-  "Mu視覺感測器.Params.LABLE|block": "標簽",
+  "Mu視覺感測器.Params.LABLE|block": "標籤",
   "Mu視覺感測器.Params.WIDTH|block": "寬度",
   "Mu視覺感測器.Params.X_POS|block": "橫向坐標",
   "Mu視覺感測器.Params.Y_POS|block": "縱向坐標",
