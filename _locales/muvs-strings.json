@@ -109,7 +109,7 @@
   "Mu視覺感測器.onOff|block": "%id|高幀率模式$on",
   "Mu視覺感測器.reset|block": "%id|恢復預設設置",
   "Mu視覺感測器.set_WB|block": "%id|設置鏡頭白平衡%level",
-  "Mu視覺感測器.set_baudrate|block": "%id|設置序列鮑率%baudrate",
+  "Mu視覺感測器.set_baudrate|block": "%id|設置序列埠鮑率%baudrate",
   "Mu視覺感測器.set_led|block": "%id|LED %led|識別到顏色 %detected_color|未識別到顏色 %undetected_color",
   "Mu視覺感測器.set_level|block": "%id|設置演算法%VISION_TYPE|性能%level",
   "Mu視覺感測器.set_zoom|block": "%id|數碼變焦%level",
