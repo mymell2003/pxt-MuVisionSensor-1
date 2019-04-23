@@ -24,8 +24,7 @@
         "mu_vision_sensor_protocol.c",
         "mu_vision_sensor_protocol.h",
         "MuVisionSensor.cpp",
-        "MuVisionSensor.h",
-        "_locales/zh/muvs-strings.json"
+        "MuVisionSensor.h"
     ],
     "public": true,
     "license": "Apache 2.0"
