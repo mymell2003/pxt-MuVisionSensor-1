@@ -238,14 +238,14 @@ namespace Mu視覺感測器 {
     //% blockId=mu_init block="初始化%id|埠%port"
     //% weight=100 
     //% shim=muvs::begin
-    //% group="设置模块"
+    //% group="設置模組"
     export function begin(id:SENSORS,port:PORT){
         return
     }
     //% blockId=MU_reset block="%id|恢復預設設置"
     //% weight=99
     //% shim=muvs::reset
-    //% group="设置模块"
+    //% group="設置模組"
     export function reset(id:SENSORS) {
         return
     }
@@ -254,7 +254,7 @@ namespace Mu視覺感測器 {
     //% level.defl=1 level.min=0 level.max=15
     //% weight=98 inlineInputMode=inline
     //% shim=muvs::set_led
-    //% group="设置模块" advanced=true
+    //% group="設置模組" advanced=true
     export function set_led(id:SENSORS,led:LEDS,detected_color:LED_COLOR_TYPE,undetected_color:LED_COLOR_TYPE) {
         return
     }
@@ -262,21 +262,21 @@ namespace Mu視覺感測器 {
     //% blockId=MU_VisionBegin block="%id|%enable|演算法%type"
     //% weight=97
     //% shim=muvs::VisionBegin
-    //% group="设置模块"
+    //% group="設置模組"
     export function VisionBegin(id:SENSORS,enable:ENABLES,type:VISION_TYPE) {
         return
     }
     //% blockId=MU_set_level block="%id|設置演算法%VISION_TYPE|性能%level"
     //% weight=96
     //% shim=muvs::set_level
-    //% group="设置模块" advanced=true
+    //% group="設置模組" advanced=true
     export function set_level(id:SENSORS,type:VISION_TYPE,level:VisionLevel) {
         return 
     }
     //% blockId=MU_set_zoom block="%id|數碼變焦%level"
     //% weight=95
     //% shim=muvs::set_zoom
-    //% group="设置模块" advanced=true
+    //% group="設置模組" advanced=true
     export function set_zoom(id:SENSORS,level:VisionZoom) {
         return 
     }
@@ -284,74 +284,74 @@ namespace Mu視覺感測器 {
     //% blockId=MU_set_baudrate block="%id|設置序列埠鮑率%baudrate"
     //% weight=94
     //% shim=muvs::set_baudrate
-    //% group="设置模块" advanced=true
+    //% group="設置模組" advanced=true
     export function set_baudrate(id:SENSORS,baud:BaudRate) {
         return 
     }
     //% blockId=MU_set_awb block="%id|設置鏡頭白平衡%level"
     //% weight=93
     //% shim=muvs::set_WB
-    //% group="设置模块" advanced=true
+    //% group="設置模組" advanced=true
     export function set_WB(id:SENSORS,awb:WBMODE) {
         return 
     }
     //% block="%id|高幀率模式$on"
     //% shim=muvs::onOff
-    //% on.shadow="toggleOnOff" group="设置模块" advanced=true
+    //% on.shadow="toggleOnOff" group="設置模組" advanced=true
     export function onOff(id:SENSORS,on: boolean) {
         return 
     }
     //% block="%id|檢測到%type" color="#2E8B57"
     //% shim=muvs::detected
-    //% group="运行模块"
+    //% group="運行模組"
     export function detected(id:SENSORS,type:VISION_TYPE):boolean{
         return true
     }
     //% block="%id|檢測到 顏色識別 x=%x|y=%y" color="#2E8B57"
     //% shim=muvs::MuVs2GetColorRCGLabel
-    //% group="运行模块"
+    //% group="運行模組"
     export function MuVs2GetColorRCGLabel(id:SENSORS,x:number,y:number):boolean{
         return true
     }
     //% block="%id|檢測到 顏色識別 顏色=%color" color="#2E8B57"
     //% shim=muvs::MuVs2GetColorDetectLabel
-    //% group="运行模块"
+    //% group="運行模組"
     export function MuVs2GetColorDetectLabel(id:SENSORS,label:COLOR_TYPE):boolean{
         return true
     }
     //% block="獲取%id|演算法%type|%item" color="#2E8B57"
     //% shim=muvs::get_value
-    //% group="运行模块"
+    //% group="運行模組"
     export function get_value(id:SENSORS,type:_VISION_TYPE,item:Params):number{
         return 0
     }
     //% block="獲取%id|🌈 顏色識別|%item" color="#2E8B57"
     //% shim=muvs::get_color_value
-    //% group="运行模块"
+    //% group="運行模組"
     export function get_color_value(id:SENSORS,item:ColorParams):number{
         return 0
     }
     //% block="獲取%id|演算法🔳 形狀卡片 =%type" color="#2E8B57"
     //% shim=muvs::get_shape_card_type
-    //% group="运行模块"
+    //% group="運行模組"
     export function get_shape_card_type(id:SENSORS,type:SHAPE_CARD_TYPE):boolean{
         return true
     }
     //% block="獲取%id|演算法🔳 交通卡片 =%type" color="#2E8B57"
     //% shim=muvs::get_traffic_card_type
-    //% group="运行模块"
+    //% group="運行模組"
     export function get_traffic_card_type(id:SENSORS,type:TRAFFIC_CARD_TYPE):boolean{
         return true
     }
     //% block="獲取%id|演算法🔳 數字卡片 =%type" color="#2E8B57"
     //% shim=muvs::get_number_card_type
-    //% group="运行模块"
+    //% group="運行模組"
     export function get_number_card_type(id:SENSORS,type:NUM_CARD_TYPE):boolean{
         return true
     }
     //% block="獲取%id|演算法 顏色識別 顏色 =%color" color="#2E8B57"
     //% shim=muvs::get_color_recognize
-    //% group="运行模块"
+    //% group="運行模組"
     export function get_color_recognize(id:SENSORS,color:COLOR_TYPE):boolean{
         return true
     }
